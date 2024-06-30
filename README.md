@@ -13,7 +13,7 @@ One interesting aspect of Aragonese grammar is the formation of plurals. Similar
 
 The document includes a specific problem set from the Brazilian Linguistics Olympiad 2016, which focuses on the formation of plural nouns in Aragonese. The problem presents a list of Aragonese words, their plural forms, and their translations, with some plural forms missing. Here are the provided words and their translations, with the task being to fill in the missing plurals:
 
-| Singular   | Plural     | Translation       |
+| Translation   | Singular     | Plural       |
 |------------|------------|-------------------|
 | valley     | bal        | bals              |
 | stool      | banquet    | banquetz          |
