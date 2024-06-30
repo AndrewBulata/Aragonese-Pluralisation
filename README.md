@@ -1,6 +1,7 @@
 # Aragonese-Pluralisation
-Computational answer to a problem by Bruno L’Astorina for the Brazilian Linguistics Olympiad 2016
 ---
+Computational answer to a problem by Bruno L’Astorina for the Brazilian Linguistics Olympiad 2016
+
 ### Introduction to Aragonese and its Linguistic Features
 
 ![Linguistic_map_Southwestern_Europe-en](https://github.com/AndrewBulata/Aragonese-Pluralisation/assets/64040990/3dd0ea6a-273b-4565-8b59-3c897e7850ac)
