@@ -129,18 +129,31 @@ for singular, plural in zip(test_words, predicted_plurals):
 The expected output should be:
 ```
 concordau - concordaus
+
 chicolat - chicolatz
+
 chunta - chuntas
+
 eclix - eclixes
+
 ferfet - ferfetz
+
 bal - bals
+
 banquet - banquetz
+
 clot - clotz
+
 banvanau - banvanaus
+
 lau - laus
+
 crau - craus
+
 glet - gletz
+
 felix - felixes
+
 ```
 
 Note: You might have noticed the inclusion of gibberish words such as 'banavanau', 'lau', and 'glet'. These are used to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it explains why the famous phrase “Strč prst skrz krk” is Czech and not English.)
