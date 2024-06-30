@@ -30,9 +30,13 @@ The document includes a specific problem set from the Brazilian Linguistics Olym
 | character  | personache | personaches       |
 | fish       | peix       | peixes            |
 
+Do attempt the problem first and then run the script attached in this repository.
+
 ### Justification for a Machine Learning Approach to Aragonese Pluralisation Problem
 
-In addressing the Aragonese pluralisation problem, a machine learning approach is particularly effective due to the complex and irregular nature of linguistic patterns. Traditional rule-based methods might struggle to capture the nuances and exceptions in plural formation, whereas a machine learning model can learn from examples and generalise to unseen data. The chosen method utilises a Random Forest Classifier within a pipeline that incorporates feature extraction and vectorisation to capture essential characteristics of the words.
+Having solved similar linguistic problems in the past, I became fascinated with the cognitive mechanisms that enable us to figure out such issues without extensive training. The human mind, with its unique 'neural network,' is the best device for language acquisition, capable of learning any language naturally over time. This curiosity led me to explore framing linguistic problems computationally. Can we develop a machine learning algorithm that learns language rules without relying on rule-based tricks? And can such a model be generalized to all languages? Stay tuned.
+
+In addressing the Aragonese pluralisation problem, a machine learning approach is particularly effective due to the complex and irregular nature of linguistic patterns. Traditional rule-based methods might struggle to capture the nuances and exceptions in plural formation, whereas a machine learning model can learn from examples and generalise to unseen data. The chosen method utilises a Random Forest Classifier within a pipeline that incorporates feature extraction and vectorisation to capture essential characteristics of the words. Another reason why this approach is ideal for our problem is that, to replicate the challenge, we train the model on a limited dataset, requiring it to infer the rules dynamically.
 
 #### Implementation Details:
 
@@ -49,37 +53,16 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.pipeline import Pipeline
+from tabulate import tabulate
 
-# Aragonese training dataset
-word_pairs = [
-    ('bal', 'bals'),
-    ('banquet', 'banquetz'),
-    ('clot', 'clotz'),
-    ('cantal', 'cantals'),
-    ('concordau', 'concordaus'),
-    ('chicolat', 'chicolatz'),
-    ('peix', 'peixes'),
-    ('deixau', 'deixaus'),
-    ('personache', 'personaches'),
-    ('clix', 'clixes'),
-    ('flor', 'flors'),        
-    ('puent', 'puentz'),      
-    ('güell', 'güells'),      
-    ('pantalon', 'pantalons'),
-    ('papir', 'papirs'),      
-    ('senyor', 'senyors'),    
-    ('fuerza', 'fuerzas'),    
-    ('libertat', 'libertats'),
-    ('pueblo', 'pueblos'),    
-    ('camino', 'caminos'),    
-    ('mont', 'montz'),        
-    ('vent', 'ventz'),        
-    ('cielo', 'cielos'),      
-    ('estrela', 'estrelas'),  
-    ('leche', 'leches'),      
-    ('hombre', 'hombres'),    
-    ('mujer', 'mujeres')
-]
+# Function to read word pairs from a text file
+def read_word_pairs(file_path):
+    word_pairs = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            singular, plural = line.strip().split(',')
+            word_pairs.append((singular, plural))
+    return word_pairs
 
 # Define function to prepare and train the model
 def train_pluralisation_model(word_pairs):
@@ -91,9 +74,7 @@ def train_pluralisation_model(word_pairs):
             'last_letter': word[-1],
             'last_two_letters': word[-2:],
             'last_three_letters': word[-3:],
-            'length': len(word),
-            'vowel_count': sum(1 for char in word if char in 'aeiou'),
-            'consonant_count': sum(1 for char in word if char not in 'aeiou')
+            'length': len(word)
         }
 
     df['features'] = df['singular'].apply(extract_features)
@@ -103,7 +84,7 @@ def train_pluralisation_model(word_pairs):
     y = df['suffix']
 
     vectoriser = DictVectorizer(sparse=False)
-    classifier = RandomForestClassifier(n_estimators=1000, random_state=23)
+    classifier = RandomForestClassifier(n_estimators=1000, random_state=23) # a bit of brute force with 1000 est.
 
     pipeline = Pipeline([
         ('vectoriser', vectoriser),
@@ -122,14 +103,15 @@ def predict_plural(model, singular_word):
             'last_letter': word[-1],
             'last_two_letters': word[-2:],
             'last_three_letters': word[-3:],
-            'length': len(word),
-            'vowel_count': sum(1 for char in word if char in 'aeiou'),
-            'consonant_count': sum(1 for char in word if char not in 'aeiou')
+            'length': len(word)
         }
 
     features = extract_features(singular_word)
     predicted_suffix = model.predict([features])[0]
     return singular_word + predicted_suffix
+
+# Read the word pairs from the text file
+word_pairs = read_word_pairs('aragonese_word_pairs.txt')
 
 # Train the model
 model = train_pluralisation_model(word_pairs)
@@ -141,5 +123,28 @@ predicted_plurals = [predict_plural(model, word) for word in test_words]
 # Print the results
 for singular, plural in zip(test_words, predicted_plurals):
     print(f"{singular} - {plural}")
+    print('')
 ```
+The expected output should be:
+```
+concordau - concordaus
+chicolat - chicolatz
+chunta - chuntas
+eclix - eclixes
+ferfet - ferfetz
+bal - bals
+banquet - banquetz
+clot - clotz
+banvanau - banvanaus
+lau - laus
+crau - craus
+glet - gletz
+felix - felixes
+```
+
+Note: You might have noticed the inclusion of gibberish words such as 'banavanau', 'lau', and 'glet'. These are used to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it explains why the famous phrase “Strč prst skrz krk” is Czech and not English.)
+
+## Executing the program
+
+In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb,' which reads the file 'aragonese_word_pairs.txt,' also included here.
 
