@@ -3,7 +3,7 @@ Computational answer to a problem by Bruno L’Astorina for the Brazilian Lingui
 
 ### Introduction to Aragonese and its Linguistic Features
 
-By The original uploader was <a href="https://en.wikipedia.org/wiki/gl:User:Alexandre_Vigo" class="extiw" title="w:gl:User:Alexandre Vigo">Alexandre Vigo</a> at <a href="https://en.wikipedia.org/wiki/gl:" class="extiw" title="w:gl:">Galician Wikipedia</a>. - Transferred from <span class="plainlinks"><a class="external text" href="https://gl.wikipedia.org">gl.wikipedia</a></span> to Commons., <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7136297">Link</a>
+![Linguistic_map_Southwestern_Europe-en](https://github.com/AndrewBulata/Aragonese-Pluralisation/assets/64040990/3dd0ea6a-273b-4565-8b59-3c897e7850ac)
 
 Aragonese is a Romance language spoken primarily in the autonomous community of Aragon in northeastern Spain. Despite its relatively small number of speakers, ranging between 10,000 and 30,000, Aragonese holds historical and cultural significance. It evolved from Vulgar Latin, like other Romance languages such as Spanish, Catalan, and Portuguese, but has retained unique phonetic, grammatical, and lexical characteristics due to its geographical and historical context. Aragonese is recognised for preserving some archaic features lost in neighbouring languages and incorporating influences from Basque, Catalan, and Occitan.
 
