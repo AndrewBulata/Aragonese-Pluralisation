@@ -1,6 +1,6 @@
 # Aragonese-Pluralisation
 ---
-Computational answer to a problem by Bruno L’Astorina for the Brazilian Linguistics Olympiad 2016
+A computational answer to a problem by Bruno L’Astorina for the 2016 Brazilian Linguistics Olympiad 
 
 ### Introduction to Aragonese and its Linguistic Features
 
