@@ -162,3 +162,53 @@ Note: You might have noticed the inclusion of gibberish words such as 'banavanau
 
 In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb,' which reads the file 'aragonese_word_pairs.txt,' also included here.
 
+## Final remarks
+
+
+
+I mentioned it is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages operate this way. For instance, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
+
+### Arabic
+Arabic uses a complex system called "broken plurals" where the internal structure of the word changes, rather than simply adding a suffix. This can involve changes to the vowels within the word and sometimes to the consonants as well.
+- **Kitab** (book) → **Kutub** (books)
+- **Maktab** (office) → **Makatib** (offices)
+- **Jabal** (mountain) → **Jibal** (mountains)
+
+### Hebrew
+Hebrew plurals are typically formed by adding suffixes, but the process is still complex due to vowel changes and variations based on gender.
+- **Yeled** (boy) → **Yeladim** (boys)
+- **Isha** (woman) → **Nashim** (women)
+- **Bayit** (house) → **Batim** (houses)
+
+English also displays this phenomenon and can form highly irregular plurals.
+
+### English Examples
+
+**Internal Changes (Vowel Changes)**
+1. **Foot** → **Feet**
+2. **Tooth** → **Teeth**
+3. **Goose** → **Geese**
+4. **Man** → **Men**
+5. **Woman** → **Women**
+
+**Irregular Plurals**
+1. **Child** → **Children**
+2. **Mouse** → **Mice**
+3. **Louse** → **Lice**
+4. **Ox** → **Oxen**
+5. **Person** → **People**
+
+**Foreign Plurals**
+These often retain the plural forms from their languages of origin:
+1. **Cactus** → **Cacti**
+2. **Focus** → **Foci**
+3. **Thesis** → **Theses**
+4. **Crisis** → **Crises**
+5. **Phenomenon** → **Phenomena** (funnily enough)
+
+Sources
+
+	•	Hebrew Language Grammar
+	•	Omniglot - Hebrew
+
+
