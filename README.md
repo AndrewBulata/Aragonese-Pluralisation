@@ -166,7 +166,7 @@ In this repository, you will find the file 'Aragonese Plural Finder 90% Machine 
 
 ---
 
-I mentioned it is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages operate this way. For instance, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
+I mentioned it is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages work this way. For example, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
 
 ### Arabic
 Arabic uses a complex system called "broken plurals" where the internal structure of the word changes, rather than simply adding a suffix. This can involve changes to the vowels within the word and sometimes to the consonants as well.
