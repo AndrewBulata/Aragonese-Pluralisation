@@ -164,7 +164,7 @@ In this repository, you will find the file 'Aragonese Plural Finder 90% Machine 
 
 ## Final remarks
 
---
+---
 
 I mentioned it is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages operate this way. For instance, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
 
@@ -206,7 +206,7 @@ These often retain the plural forms from their languages of origin:
 4. **Crisis** → **Crises**
 5. **Phenomenon** → **Phenomena** (funnily enough)
 
---
+---
 Therefore, the plural finder we have developed would not detect these exceptions.
 
 Sources
