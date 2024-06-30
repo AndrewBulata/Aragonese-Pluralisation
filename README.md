@@ -206,9 +206,20 @@ These often retain the plural forms from their languages of origin:
 4. **Crisis** → **Crises**
 5. **Phenomenon** → **Phenomena** (funnily enough)
 
+
+Therefore, the plural finder we have developed would not detect these exceptions.
+
 Sources
 
-	•	Hebrew Language Grammar
-	•	Omniglot - Hebrew
+1. **Omniglot - Hebrew**:
+   - [Omniglot: Hebrew Language](https://www.omniglot.com/writing/hebrew.htm)
+   
+2. **Learn Hebrew Phrases - Grammar**:
+   - [Learn Hebrew Phrases: Hebrew Grammar](https://www.learn-hebrew-phrases.com/hebrew-grammar/)
+
+3. **HebrewPod101 - Hebrew Grammar**:
+   - [HebrewPod101: Hebrew Grammar](https://www.hebrewpod101.com/hebrew-grammar/)
+
+
 
 
