@@ -46,7 +46,7 @@ In addressing the Aragonese pluralisation problem, a machine learning approach i
 3. **Pipeline**: Using a pipeline ensures that feature extraction, vectorisation, and classification are streamlined, improving the reproducibility and efficiency of the model training and prediction processes.
 4. **Training and Testing**: The model is trained on a diverse dataset of singular-plural pairs and tested on new singular nouns to validate its performance. This approach ensures the model's predictions are accurate and reliable.
 
-This machine learning approach not only provides a scalable solution to the pluralisation problem but also demonstrates the power of data-driven methods in linguistic analysis.
+This machine learning approach not only provides a scalable solution to the pluralisation problem but also demonstrates the power of data-driven methods in linguistic analysis. Below you will find the implemenation.
 
 ```python
 import pandas as pd
@@ -156,11 +156,11 @@ felix - felixes
 
 ```
 
-Note: You might have noticed the inclusion of gibberish words such as 'banavanau', 'lau', and 'glet'. These are used to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it explains why the famous phrase “Strč prst skrz krk” is Czech and not English.)
+Note: You might have noticed the inclusion of gibberish words such as 'banavanau', 'lau', and 'glet'. These are used to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it explains why the famous phrase “Strč prst skrz krk” is Czech and not English. 🤣)
 
 ## Executing the program
 
-In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb,' which reads the file 'aragonese_word_pairs.txt,' also included here.
+In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb' (the same script as above) which reads the file 'aragonese_word_pairs.txt,' also included here.
 
 ---
 ## Final remarks
