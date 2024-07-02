@@ -33,13 +33,13 @@ The document includes a specific problem set from the Brazilian Linguistics Olym
 
 Do attempt the problem first and then run the script attached in this repository.
 
-### Justification for a Machine Learning Approach to Aragonese Pluralisation Problem
+### Justification for a Machine Learning Approach to the Aragonese Pluralisation Problem
 
 Having solved similar linguistic problems in the past, I became fascinated with the cognitive mechanisms that enable us to figure out such issues without extensive training. The human mind, with its unique 'neural network,' is the best device for language acquisition, capable of learning any language naturally over time. This curiosity led me to explore framing linguistic problems computationally. Can we develop a machine learning algorithm that learns language rules without relying on rule-based tricks? And can such a model be generalized to all languages? Stay tuned.
 
 In addressing the Aragonese pluralisation problem, a machine learning approach is particularly effective due to the complex and irregular nature of linguistic patterns. Traditional rule-based methods might struggle to capture the nuances and exceptions in plural formation, whereas a machine learning model can learn from examples and generalise to unseen data. The chosen method utilises a Random Forest Classifier within a pipeline that incorporates feature extraction and vectorisation to capture essential characteristics of the words. Another reason why this approach is ideal for our problem is that, to replicate the challenge, we train the model on a limited dataset, requiring it to infer the rules dynamically.
 
-#### Implementation Details:
+#### Implementation Details
 
 1. **Feature Extraction**: By extracting features such as the last letters of the word, its length, and counts of vowels and consonants, we provide the model with relevant linguistic patterns that influence pluralisation in Aragonese.
 2. **Random Forest Classifier**: This robust classifier is selected for its ability to handle a high-dimensional feature space and its resistance to overfitting, making it suitable for capturing complex relationships within the data.
