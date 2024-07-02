@@ -160,7 +160,7 @@ Note: You might have noticed the inclusion of gibberish words such as 'banavanau
 
 ## Executing the program
 
-In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb' (the same script as above) which reads the file 'aragonese_word_pairs.txt,' also included here.
+In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb' (the same script as above) which reads the file 'aragonese_word_pairs.txt,' also included here. Make sure to download the text file in order to run the script. Please feel free to test some Aragonese words of your own, as well.
 
 ---
 ## Final remarks
