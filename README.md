@@ -207,9 +207,9 @@ These often retain the plural forms from their languages of origin:
 5. **Phenomenon** → **Phenomena** (funnily enough)
 
 ---
-Therefore, the plural finder we have developed would not detect these exceptions.
+Therefore, the plural finder we have developed here would not detect these exceptions, as it searches for inflection patterns in the form of suffixes at the end of the word.
 
-Sources
+Additional Sources
 
 1. **Omniglot - Hebrew**:
    - [Omniglot: Hebrew Language](https://www.omniglot.com/writing/hebrew.htm)
