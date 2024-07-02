@@ -54,7 +54,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.pipeline import Pipeline
-from tabulate import tabulate
 
 # Function to read word pairs from a text file
 def read_word_pairs(file_path):
