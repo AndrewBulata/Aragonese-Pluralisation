@@ -212,7 +212,7 @@ Lastly, the current program cannot handle Italian or Romanian either because the
 
 - **bambino - bambini** (child - children)
 - **finestra - finestre** (window - windows)
-- **casco - caschi** (helmet - helmets) *suffixation with consonant change*
+- **casco - caschi** (helmet - helmets, *suffixation with consonant change*)
 
 #### Romanian
 
