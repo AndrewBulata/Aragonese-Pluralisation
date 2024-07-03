@@ -10,7 +10,7 @@ A computational answer to a problem by Bruno L’Astorina for the 2016 Brazilian
 
 Aragonese is a Romance language spoken primarily in the autonomous community of Aragon in northeastern Spain. Despite its relatively small number of speakers, ranging between 10,000 and 30,000, Aragonese holds historical and cultural significance. It evolved from Vulgar Latin, like other Romance languages such as Spanish, Catalan, and Portuguese, but has retained unique phonetic, grammatical, and lexical characteristics due to its geographical and historical context. Aragonese is recognised for preserving some archaic features lost in neighbouring languages and incorporating influences from Basque, Catalan, and Occitan.
 
-One interesting aspect of Aragonese grammar is the formation of plurals. Similar to other Romance languages, Aragonese typically forms plurals by adding an -s to the end of singular nouns. For instance, "valley" becomes "bals" and "stone" becomes "cantals". However, there are exceptions and irregular plural forms that must be memorised, such as "banquet" to "banquetz" and "clot" to "clotz". Understanding these pluralisation rules provides insight into the language's structure and helps in deciphering texts and linguistic problems.
+One interesting aspect of Aragonese grammar is the formation of plurals. Similar to other Romance languages, Aragonese typically forms plurals by adding an -s to the end of singular nouns. For instance, "bal" (valley) becomes "bals" and "cantal" (stone) becomes "cantals". However, there are exceptions and irregular plural forms that must be memorised, such as "banquet" to "banquetz" and "clot" to "clotz". Understanding these pluralisation rules provides insight into the language's structure and helps in deciphering texts and linguistic problems.
 
 ### The Aragonese Problem
 
@@ -162,10 +162,10 @@ Note: You might have noticed the inclusion of gibberish words such as 'banavanau
 In this repository, you will find the file 'Aragonese Plural Finder 90% Machine Learning.ipynb' (the same script as above) which reads the file 'aragonese_word_pairs.txt,' also included here. Make sure to download the text file in order to run the script. Please feel free to test some Aragonese words of your own, as well.
 
 ---
-## Final remarks
+## Final remarks: extension to other languages
 
 
-I mentioned it is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages work this way. For example, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
+I mentioned the program is 90% ML because it still follows a pre-defined rule of examining the roots of the words. However, not all languages work this way. For example, some languages, particularly those in the Semitic family, form plurals that do not depend solely on the endings of the singular nouns. These languages often use internal changes, prefixes, suffixes, or a combination of these methods to form plurals. 
 
 ### Arabic
 Arabic uses a complex system called "broken plurals" where the internal structure of the word changes, rather than simply adding a suffix. This can involve changes to the vowels within the word and sometimes to the consonants as well.
@@ -204,6 +204,15 @@ These often retain the plural forms from their languages of origin:
 3. **Thesis** → **Theses**
 4. **Crisis** → **Crises**
 5. **Phenomenon** → **Phenomena** (funnily enough)
+
+Lastly, the current program cannot handle Italian or Romanian either because these languages rely on vowel mutation to form plurals, in addition to unpredictable internal changes in Romanian.
+
+Italian: bambino - bambini (child - children)
+         finestra - finestre (window - windows)
+Romanian: om - oameni (human - humans)
+          soră - surori (sister - sisters)
+
+Essentially, this program is only suitable for languages that use suffixation (the addition of suffixes) to form plurals.
 
 ---
 Therefore, the plural finder we have developed here would not detect these exceptions, as it searches for inflection patterns in the form of suffixes at the end of the word.
