@@ -207,12 +207,18 @@ These often retain the plural forms from their languages of origin:
 
 Lastly, the current program cannot handle Italian or Romanian either because these languages rely on *vowel mutation* or *suffixation with consonant change* to form plurals, in addition to unpredictable internal changes in Romanian.
 
-Italian: bambino - bambini (child - children)
-         finestra - finestre (window - windows)
-         casco - caschi (helmet - helmets) = *suffixation with consonant change*
-Romanian: om - oameni (human - humans)
-          soră - surori (sister - sisters)
-          calculator - calculatoare (you might recognise this word)
+
+#### Italian
+
+- **bambino - bambini** (child - children)
+- **finestra - finestre** (window - windows)
+- **casco - caschi** (helmet - helmets) *suffixation with consonant change*
+
+#### Romanian
+
+- **om - oameni** (human - humans)
+- **soră - surori** (sister - sisters)
+- **calculator - calculatoare** (you might recognize this word)
 
 Essentially, this program is only suitable for languages that use *suffixation* (the addition of suffixes) to form plurals.
 
