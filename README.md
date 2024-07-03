@@ -179,7 +179,7 @@ Hebrew plurals are typically formed by adding suffixes, but the process is still
 - **Isha** (woman) → **Nashim** (women)
 - **Bayit** (house) → **Batim** (houses)
 
-English also displays this phenomenon and can form highly irregular plurals.
+English also displays this *phenomenon* and can form highly irregular plurals.
 
 ### English Examples
 
@@ -203,16 +203,16 @@ These often retain the plural forms from their languages of origin:
 2. **Focus** → **Foci**
 3. **Thesis** → **Theses**
 4. **Crisis** → **Crises**
-5. **Phenomenon** → **Phenomena** (funnily enough)
+5. **Phenomenon** → **Phenomena**
 
-Lastly, the current program cannot handle Italian or Romanian either because these languages rely on vowel mutation to form plurals, in addition to unpredictable internal changes in Romanian.
+Lastly, the current program cannot handle Italian or Romanian either because these languages rely on *vowel mutation* to form plurals, in addition to unpredictable internal changes in Romanian.
 
 Italian: bambino - bambini (child - children)
          finestra - finestre (window - windows)
 Romanian: om - oameni (human - humans)
           soră - surori (sister - sisters)
 
-Essentially, this program is only suitable for languages that use suffixation (the addition of suffixes) to form plurals.
+Essentially, this program is only suitable for languages that use *suffixation* (the addition of suffixes) to form plurals.
 
 ---
 Therefore, the plural finder we have developed here would not detect these exceptions, as it searches for inflection patterns in the form of suffixes at the end of the word.
