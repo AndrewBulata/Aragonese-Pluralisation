@@ -200,7 +200,7 @@ English also displays this *phenomenon* and can form highly irregular plurals.
 
 **Foreign Plurals**
 
-These often retain the plural forms from their languages of origin (in this case Latin and Greek):
+These often retain the plural forms from their languages of origin (in this case, Latin and Greek):
 1. **Cactus** → **Cacti**
 2. **Focus** → **Foci**
 3. **Thesis** → **Theses**
