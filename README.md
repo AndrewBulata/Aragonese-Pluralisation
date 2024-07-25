@@ -199,6 +199,7 @@ English also displays this *phenomenon* and can form highly irregular plurals.
 5. **Person** → **People**
 
 **Foreign Plurals**
+
 These often retain the plural forms from their languages of origin:
 1. **Cactus** → **Cacti**
 2. **Focus** → **Foci**
