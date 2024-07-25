@@ -219,7 +219,7 @@ Lastly, the current program cannot handle Italian or Romanian either because the
 
 - **om - oameni** (human - humans)
 - **soră - surori** (sister - sisters)
-- **calculator - calculatoare** (you might recognize this word)
+- **calculator - calculatoare** (you should be able to recognise this word)
 
 Essentially, this program is only suitable for languages that use *suffixation* (the addition of suffixes) to form plurals.
 
