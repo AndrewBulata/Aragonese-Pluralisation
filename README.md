@@ -200,15 +200,17 @@ English also displays this *phenomenon* and can form highly irregular plurals.
 
 **Foreign Plurals**
 
-These often retain the plural forms from their languages of origin:
+These often retain the plural forms from their languages of origin (in this case Latin and Greek):
 1. **Cactus** → **Cacti**
 2. **Focus** → **Foci**
 3. **Thesis** → **Theses**
 4. **Crisis** → **Crises**
 5. **Phenomenon** → **Phenomena**
 
+
 Lastly, the current program cannot handle Italian or Romanian either because these languages rely on *vowel mutation* or *suffixation with consonant change* to form plurals, in addition to unpredictable internal changes in Romanian.
 
+For example, 
 
 #### Italian
 
@@ -222,7 +224,7 @@ Lastly, the current program cannot handle Italian or Romanian either because the
 - **soră - surori** (sister - sisters)
 - **calculator - calculatoare** (you should be able to recognise this word)
 
-Essentially, this program is only suitable for languages that use *suffixation* (the addition of suffixes) to form plurals.
+Essentially, this program is only suitable for languages that use some form of *suffixation* (the addition of suffixes) to form plurals.
 
 ---
 Therefore, the plural finder we have developed here would not detect these exceptions, as it searches for inflection patterns in the form of suffixes at the end of the word.
