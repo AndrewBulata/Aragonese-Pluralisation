@@ -124,7 +124,7 @@ predicted_plurals = [predict_plural(model, word) for word in test_words]
 # Print the results
 for singular, plural in zip(test_words, predicted_plurals):
     print(f"{singular} - {plural}")
-    print('') # inserts a space between word pairs for better readability
+    print('') 
 ```
 The expected output should be:
 ```
