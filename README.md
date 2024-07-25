@@ -10,11 +10,11 @@ A computational answer to a problem by Bruno L’Astorina for the 2016 Brazilian
 
 Aragonese is a Romance language spoken primarily in the autonomous community of Aragon in northeastern Spain. Despite its relatively small number of speakers, ranging between 10,000 and 30,000, Aragonese holds historical and cultural significance. It evolved from Vulgar Latin, like other Romance languages such as Spanish, Catalan, and Portuguese, but has retained unique phonetic, grammatical, and lexical characteristics due to its geographical and historical context. Aragonese is recognised for preserving some archaic features lost in neighbouring languages and incorporating influences from Basque, Catalan, and Occitan.
 
-One interesting aspect of Aragonese grammar is the formation of plurals. Similar to other Romance languages, Aragonese typically forms plurals by adding an -s to the end of singular nouns. For instance, "bal" (valley) becomes "bals" and "cantal" (stone) becomes "cantals". However, there are exceptions and irregular plural forms that must be memorised, such as "banquet" to "banquetz" and "clot" to "clotz". Understanding these pluralisation rules provides insight into the language's structure and helps in deciphering texts and linguistic problems.
+One interesting aspect of Aragonese grammar is the formation of plurals. Similar to other Romance languages, Aragonese typically forms plurals by adding an -s to the end of singular nouns. For instance, ***bal*** (valley) becomes ***bals*** and ***cantal*** (stone) becomes ***cantals***. However, there are exceptions and irregular plural forms that must be learnt, such as ***banquet*** to ***banquetz*** and ***clot*** to ***clotz***. Understanding these pluralisation rules provides insight into the structure of language and helps in deciphering texts and linguistic problems.
 
 ### The Aragonese Problem
 
-The document includes a specific problem set from the Brazilian Linguistics Olympiad 2016, which focuses on the formation of plural nouns in Aragonese. The problem presents a list of Aragonese words, their plural forms, and their translations, with some plural forms missing. Here are the provided words and their translations, with the task being to fill in the missing plurals:
+The problem in question is taken from the Brazilian Linguistics Olympiad 2016, which focuses on the formation of plural nouns in Aragonese. It presents a list of Aragonese words, their plural forms, and their translations, with some plural forms missing. Here are the provided words and their translations, with the task being to fill in the missing plurals:
 
 | Translation   | Singular     | Plural       |
 |------------|------------|-------------------|
@@ -35,9 +35,10 @@ Do attempt the problem first and then run the script attached in this repository
 
 ### Justification for a Machine Learning Approach to the Aragonese Pluralisation Problem
 
-Having solved similar linguistic problems in the past, I became fascinated with the cognitive mechanisms that enable us to figure out such issues without extensive training. The human mind, with its unique 'neural network,' is the best device for language acquisition, capable of learning any language naturally over time. This curiosity led me to explore framing linguistic problems computationally. Can we develop a machine learning algorithm that learns language rules without relying on rule-based tricks? And can such a model be generalized to all languages? Stay tuned.
+Having solved similar linguistic problems in the past, I became fascinated with the cognitive mechanisms that enable us to figure out such issues without extensive training. The human mind, with its unique 'neural network,' is the best device for language acquisition, capable of learning any language naturally over time. This curiosity led me to explore framing linguistic problems in computational terms. Can we develop a machine learning algorithm that learns language rules without relying on rule-based tricks? And can such a model be generalized to all languages? Stay tuned.
 
 In addressing the Aragonese pluralisation problem, a machine learning approach is particularly effective due to the complex and irregular nature of linguistic patterns. Traditional rule-based methods might struggle to capture the nuances and exceptions in plural formation, whereas a machine learning model can learn from examples and generalise to unseen data. The chosen method utilises a Random Forest Classifier within a pipeline that incorporates feature extraction and vectorisation to capture essential characteristics of the words. Another reason why this approach is ideal for our problem is that, to replicate the challenge, we train the model on a limited dataset, requiring it to infer the rules dynamically.
+Let's get to work!
 
 #### Implementation Details
 
@@ -155,7 +156,7 @@ felix - felixes
 
 ```
 
-Note: You might have noticed the inclusion of gibberish words such as 'banavanau', 'lau', and 'glet'. These are used to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it explains why the famous phrase “Strč prst skrz krk” is Czech and not English. 🤣)
+Note: You might have noticed that I included gibberish words such as 'banavanau', 'lau', and 'glet'. I used these to test the model's behavior when encountering new words that follow the *phonotactic* rules of Aragonese. (Phonotactics is a branch of phonology that deals with the permissible combinations of sounds in a particular language. For example, it gives us a clue as to why the famous phrase “Strč prst skrz krk” is Czech and not English. 🤣)
 
 ## Executing the program
 
